@@ -1,5 +1,5 @@
 '''
-This is a script to test your mental arithmatic
+This is a script to test your mental arithmetic
 '''
 
 from os import system
@@ -8,7 +8,7 @@ import random
 name = input("Hey, what's your name? ").capitalize()
 system("clear") # clear the console to stop it from being cluttered
 
-print(f"Hey {name}, let's test your mental arithmatic!\nThere'll be 10 questions.")
+print(f"Hey {name}, let's test your mental arithmetic!\nThere'll be 10 questions.")
 
 q_num = 0 # define the question counter
 score = 0 # remembe the score
