@@ -48,19 +48,24 @@ Stop when we have the number of prime numbers we wanted.
 '''
 
 how_many = float(input("This will print the first x prime numbers, enter x as an integer: "))
-prime = "y"
+# prime = "y"
 primes = 0
 check_for_prime = 2
 
 while primes < how_many:
-    prime = "y"
+    # prime = "y"
     check_for_prime += 1
 
-    for i in range(2,check_for_prime-1):
+    for i in range(2,check_for_prime):
+        '''
+        previously used a conditional operator
         if check_for_prime/i == int(check_for_prime/i):
             prime = "n"
             break
-    
-    if prime == "y":
-        primes += 1
-        print(check_for_prime)
+        '''
+        if check_for_prime%i == 0:
+            break
+        
+        if i == check_for_prime-1:
+            primes += 1
+            print(check_for_prime)
